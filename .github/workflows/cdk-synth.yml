@@ -1,0 +1,28 @@
+name: CDK Synth
+on: [push, pull_request]
+jobs:
+  CDK-Synth:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Source
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Compile
+        run: |
+          npm ci
+          npx ts-node lib/workaround.ts
+          npx tsc
+
+      - name: CDK Synth
+        run: |
+          npx cdk synth --verbose 
+
+
+
+
