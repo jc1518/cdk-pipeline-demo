@@ -1,0 +1,9 @@
+{
+  "ACCOUNT_A_ID": "111111111111",
+  "ACCOUNT_A_REGION": "ap-southeast-2",
+  "GHE_REPO": "jackie/cdk-pipelines-demo",
+  "GHE_BRANCH": "master",
+  "GHE_CODESTART_CONNECTION": "arn:aws:codestar-connections:ap-southeast-2:11111111111:connection/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+  "ACCOUNT_B_ID": "222222222222",
+  "ACCOUNT_B_REGION": "ap-southeast-2"
+}
